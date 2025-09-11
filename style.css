@@ -318,7 +318,8 @@ a:hover img {
     }
 
     .cards {
-        flex-direction: column;
+        column-count: 1;
+        column-gap: 10px;
     }
 
     .cards a {
