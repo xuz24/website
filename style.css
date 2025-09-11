@@ -185,11 +185,10 @@ a:hover img {
     gap: 20px;
 }
 
+
 .cards {
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    column-count: 2;
+    column-gap: 10px;
 }
 
 .cards a {
@@ -207,7 +206,11 @@ a:hover img {
     padding: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
+    margin-bottom: 10px;
     transition: transform 0.15s ease-in-out;
+    break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+    -moz-column-break-inside: avoid;
 }
 
 .project-card:hover {
