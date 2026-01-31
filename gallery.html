@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zijie Xu</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://tarptaeya.github.io/repo-card/repo-card.js"></script>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+
+<body>
+    <div class="gallery_header">
+        <a href="index.html">
+        <h1>Zijie Xu </h1>
+        </a>
+        <h3> Fujifilm X-T30 </h3>
+    </div>
+    <div class="gallery_container">
+        <h1>New York, Aug. 2024</h1>
+        <div class="gallery">
+            <img src="photos/DSCF8520.jpeg">
+            <img src="photos/IMG_0016.jpeg">
+            <img src="photos/IMG_0020.jpeg">
+            <img src="photos/IMG_0021.jpeg">
+            <img src="photos/IMG_3901.jpeg">
+        </div>
+
+        <h1>Chicago, Aug. 2024</h1>
+        <div class="gallery">
+            <img src="photos/IMG_3541.jpeg">
+            <img src="photos/IMG_3543.jpeg">
+            <img src="photos/IMG_3606.jpeg">
+            <img src="photos/IMG_3712.jpeg">
+            <img src="photos/IMG_3741.jpeg">
+        </div>
+
+        <h1>Japan, Aug. 2025</h1>
+        <div class="gallery">
+            <img src="photos/IMG_8963.jpeg">
+            <img src="photos/IMG_8978.jpeg">
+            <img src="photos/IMG_8977.jpeg">
+            <img src="photos/IMG_8979.jpeg">
+            <img src="photos/IMG_8980.jpeg">
+            <img src="photos/IMG_8968.jpeg">
+        </div>
+
+
+        <div id="imageModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="modalImage">
+        </div>
+
+
+    </div>
+
+    <script>
+        const modal = document.getElementById('imageModal');
+        const modalImg = document.getElementById('modalImage');
+        const galleryImages = document.querySelectorAll('.gallery img');
+        const closeBtn = document.querySelector('.close');
+        let currentIndex = 0;
+
+        galleryImages.forEach((img, index) => {
+            img.addEventListener('click', function () {
+                modal.style.display = 'flex';
+                modalImg.src = this.src;
+                currentIndex = index;
+            });
+        });
+
+        closeBtn.addEventListener('click', function () {
+            modal.style.display = 'none';
+        });
+
+        modal.addEventListener('click', function (e) {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+
+        document.addEventListener('keydown', function (e) {
+            if (modal.style.display === 'flex') {
+                if (e.key === 'Escape') {
+                    modal.style.display = 'none';
+                } else if (e.key === 'ArrowRight') {
+                    currentIndex = (currentIndex + 1) % galleryImages.length;
+                    modalImg.src = galleryImages[currentIndex].src;
+                } else if (e.key === 'ArrowLeft') {
+                    currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+                    modalImg.src = galleryImages[currentIndex].src;
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

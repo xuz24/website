@@ -19,6 +19,9 @@
 <body>
     <div class="container">
         <div class="left-column">
+            <a href="gallery.html" style="display: block; margin: 20px;">
+                <img src="images/camera.png" width="30px" height="30px">
+            </a>
             <header id="home">
                 <section id="pfp">
                     <img class="profile" src="images/profile.jpeg" alt="profile picture">
@@ -53,35 +56,51 @@
             <div class="row">
                 <section id="about">
                     <h2>About me</h2>
-                    <p>
+                    <h3>
                         Hi, I'm Zijie!
-                    </p>
+                    </h3>
                     <p>
                         I am a student at the University of Michigan majoring in Data Science.
-                        I'm a passionate learner who is always searching for my next obsession.
                     </p>
+
                     <p>
-                        I love solving complex problems—whether it's optimizing algorithms,
-                        simulating pirate treasure hunts, or analyzing wildlife data to uncover hidden patterns.
-                        Right now, I’m diving deeper into AI and machine learning,
-                        with the goal of building intelligent systems that make a real-world impact.
+                        My career interests lie broadly in the field of AI/ML and data engineering. I enjoy learning by
+                        building—whether that’s experimenting with machine learning models, working on data pipelines,
+                        or exploring new tools and frameworks.
                     </p>
+
                     <p>
-                        Some relevant coursework I've taken / am taking are: Linear Algebra, Discrete Math, Data Structures and
-                        Algorithms, Introduction to Probability and Statistics, Practical Data Science, Appplied
-                        Regression, Web Systems, and Intro to Machine Learning.
+                        In my free time I like to dabble in photography and play badminton. Currently I am learning how
+                        to play the guitar and I have a really bad milk tea addiction.
                     </p>
-                    </p>
-                    <p>
-                        When I’m not staring at my laptop,
-                        I’m probably out taking pictures or browsing the latest mechanical keyboards.
-                    </p>
+
                 </section>
             </div>
             <div class="row">
                 <section id="projects">
                     <h2>Projects</h2>
                     <div class="cards">
+                        <a href="https://github.com/xuz24/nl_image_editor/blob/main/nl_image_editor.ipynb"
+                            target="_blank">
+                            <div class="project-card">
+                                <h4 class="p-title">Natural Language Image Editor</h4>
+                                <p class="p-desc">
+                                    Designed a modular AI language-vision pipeline where Gemma LLM parses natural
+                                    language instructions into
+                                    structured JSON directives for downstream edit execution through prompt engineering.
+                                </p>
+                                <p class="p-desc">
+                                    Integrated GroundingDINO and SAM for zero-shot object detection and high-precision
+                                    segmentation, enabling
+                                    targeted region masking.
+                                </p>
+                                <p class="p-desc">
+                                    Implemented Stable Diffusion inpainting to perform semantic edits via masked latent
+                                    diffusion.
+                                </p>
+                            </div>
+                        </a>
+
                         <a href="https://devpost.com/software/voicelink-3o41in" target="_blank">
                             <div class="project-card">
                                 <h4 class="p-title">VoiceLink</h4>
@@ -99,6 +118,14 @@
                                     Optimized the gesture detection pipeline in React and Python for low-latency
                                     performance, delivering a smooth, reliable demo within the 24-hour hackathon.
                                 </p>
+                            </div>
+                        </a>
+
+                        <a href="https://github.com/xuz24/website" target="_blank">
+                            <div class="project-card">
+                                <h4 class="p-title">Personal Website</h4>
+                                <p class="p-desc">Made a minimalistic personal website from scratch using HTML and CSS.
+                                    Includes interactive features and mobile support.</p>
                             </div>
                         </a>
 
@@ -121,13 +148,7 @@
                                 </p>
                             </div>
                         </a>
-                        <a href="https://github.com/xuz24/website" target="_blank">
-                            <div class="project-card">
-                                <h4 class="p-title">Personal Website</h4>
-                                <p class="p-desc">Made a minimalistic personal website from scratch using HTML and CSS.
-                                    Includes interactive features and mobile support.</p>
-                            </div>
-                        </a>
+
                         <a href="https://github.com/xuz24/isle-royale-wolf-moose" target="_blank">
                             <div class="project-card">
                                 <h4 class="p-title">Isle Royale Wolf & Moose Population Analysis</h4>
@@ -258,16 +279,17 @@
                             <div class="exp-details">
                                 <div class="title-pos">
                                     <h4>Sansu Sushi and Cocktails</h4>
-                                    <p style="font-style: italic;">Host – Part-time</p>
+                                    <p style="font-style: italic;">Server, Host – Part-time</p>
                                 </div>
                                 <div class="loc-date">
                                     <p>East Lansing, MI</p>
-                                    <p>Apr 2024 – present</p>
+                                    <p>Apr 2024 – Aug 2025</p>
                                 </div>
                             </div>
                             <div class="exp-desc">
-                                <p>Bussed tables, wiped windows, cleaned bathrooms, managed reservations and waitlist.
-                                    Greeted and seated customers, answered phone calls, and completed all to-go/online
+                                <p>Provided excellent customer service at a 4.5 star 2k+ review restaurant. Bussed
+                                    tables, managed reservations and waitlist.
+                                    Greeted and seated customers and completed all to-go/online
                                     orders.</p>
                             </div>
                         </div>
@@ -291,6 +313,14 @@
                             <p>Java</p>
                         </div>
                         <div class="logo">
+                            <img src="images/sql.png">
+                            <p>SQL</p>
+                        </div>
+                        <div class="logo">
+                            <img src="images/r.png">
+                            <p>R</p>
+                        </div>
+                        <div class="logo">
                             <img src="images/html.png">
                             <p>HTML</p>
                         </div>
@@ -298,9 +328,18 @@
                             <img src="images/css.png">
                             <p>CSS</p>
                         </div>
+                        <div class="logo">
+                            <img src="images/javascript.png">
+                            <p>JavaScript</p>
+                        </div>
                     </div>
-                    <h3>Libraries, Frameworks, & Technologies</h3>
-                    <div class="libraries">
+
+                    <h3>Libraries</h3>
+                    <div class="languages">
+                        <div class="logo">
+                            <img src="images/pytorch.png">
+                            <p>pytorch</p>
+                        </div>
                         <div class="logo">
                             <img src="images/pandas.png">
                             <p>pandas</p>
@@ -312,6 +351,38 @@
                         <div class="logo">
                             <img src="images/scikit-learn.png">
                             <p>sk-learn</p>
+                        </div>
+                        <div class="logo">
+                            <img src="images/opencv.png">
+                            <p>opencv</p>
+                        </div>
+                        <div class="logo">
+                            <img src="images/matplotlib.png">
+                            <p>matplotlib</p>
+                        </div>
+                        <div class="logo">
+                            <img src="images/seaborn.svg">
+                            <p>seaborn</p>
+                        </div>
+                    </div>
+
+                    <h3>Frameworks, & Technologies</h3>
+                    <div class="libraries">
+                        <div class="logo">
+                            <img src="images/spark.png">
+                            <p>Spark</p>
+                        </div>
+                        <div class="logo">
+                            <img src="images/aws.png">
+                            <p>aws</p>
+                        </div>
+                        <div class="logo">
+                            <img src="images/flask.svg">
+                            <p>Flask</p>
+                        </div>
+                        <div class="logo">
+                            <img src="images/react.png">
+                            <p>React</p>
                         </div>
                         <div class="logo">
                             <img src="images/jupyter.png">
